@@ -1,6 +1,10 @@
 from django.db.models import Model, CharField, BooleanField, ForeignKey, CASCADE
 
 
+class Currency(Model):
+    name = CharField(max_length=255)
+
+
 class Shop(Model):
     name = CharField(max_length=255)
 
