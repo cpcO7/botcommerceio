@@ -9,7 +9,7 @@ class CategoryViewSet(ListAPIView, CreateAPIView, DestroyAPIView):
     serializer_class = CategorySerializer
 
 
-class ProductListView(ListAPIView, CreateAPIView)kk:
+class ProductListView(ListAPIView, CreateAPIView):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
 
